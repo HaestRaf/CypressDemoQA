@@ -1,0 +1,17 @@
+{
+  "firstName": "Test",
+  "lastName": "Persoon",
+  "email": "TestingInTheNameOf@cypress.io",
+  "gender" : "Male",
+  "phoneNr": "1234567890",
+  "dateOfBirth" : "22/06/1990",
+  "hobbies": ["Sports", "Music"],
+  "subjects": ["Physics", "English"],
+  "picture" : {
+    "pathToPicture" : "cypress/fixtures/catPic.jpg",
+    "name" : "catPic.jpg"
+  },
+  "currentAddress" : "Teststraat 666",
+  "state": "Rajasthan",
+  "city": "Jaiselmer"
+}
