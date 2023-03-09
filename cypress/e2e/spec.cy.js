@@ -24,6 +24,8 @@ describe('Testing ToolsQA to navigate', () => {
       .should('have.value', testdata.lastName)
       .should('not.have.value', '')
     cy.get(components.inputEmail).should('have.value', testdata.email)
+    const emailRegex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/
+    cy.get(components.inputEmail).invoke('val').should('match', emailRegex)
     if (testdata.gender.toLowerCase() === 'male') {
       cy.get(components.radioBtnMale).should('have.value', 'Male').should('be.checked')
     } else if (testdata.gender.toLowerCase() === 'female') {
